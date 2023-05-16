@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <slider-component>
+        <div class="interface">
+          <div class="slider-content">
+            <ul class="slider-container">
+              <li
+                id="slide-item-1"
+                data-slide="1"
+                data-slide-active="true"
+                class="slide-item"
+              >
+                <div>
+                  <img src="./img/img1.jpg" height="267" width="400" alt="" />
+                </div>
+              </li>
+              <li
+                id="slide-item-2"
+                data-slide="2"
+                data-slide-active="next"
+                class="slide-item"
+              >
+                <div>
+                  <img src="./img/img2.jpg" height="267" width="400" alt="" />
+                </div>
+              </li>
+              <li
+                id="slide-item-3"
+                data-slide="3"
+                data-slide-active="false"
+                class="slide-item"
+              >
+                <div>
+                  <img src="./img/img3.jpg" height="267" width="400" alt="" />
+                </div>
+              </li>
+              <li
+                id="slide-item-4"
+                data-slide="4"
+                data-slide-active="previous"
+                class="slide-item"
+              >
+                <div>
+                  <img src="./img/img4.jpg" height="267" width="400" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-control slider-control-prev">
+              <span class="arrow">&larr;</span>
+              <span class="visually-hidden">Prev</span></button
+            ><button class="slider-control slider-control-next">
+              <span class="arrow">&rarr;</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </slider-component>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
